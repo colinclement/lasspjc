@@ -12,7 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
     This website stores notes from short talks given to and presented
     by Cornell graduate students in the Physics department.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000/lasspjc"# the base hostname & protocol for your site
+url: "http://localhost:4000/lasspjc" # the base hostname & protocol for your site
+github_username: colin.clementt
 
 # Build settings
 markdown: kramdown
