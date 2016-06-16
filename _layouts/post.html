@@ -8,8 +8,20 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="post-content pdf" itemprop="articleBody">
     {{ content }}
+  <h4>Categories: 
+  {% for cat in page.categories %}
+   {{ cat }} 
+  {% endfor %}
+  </h4>
+
+  <h4>Related talks:</h4>
+  <ul>
+  {% for post in site.related_posts %}
+  <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
   </div>
 
 </article>

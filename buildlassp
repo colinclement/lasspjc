@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+jekyll build -V --config _config_lassp.yml --destination /home/colin/websites/lassp-journalclub/site
+cp -r /home/colin/websites/lassp-journalclub/site/* /home/colin/websites/lasspjc-drive/

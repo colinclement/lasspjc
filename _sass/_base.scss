@@ -26,16 +26,17 @@ body {
 }
 
 .pdf {
-    body {
-        height: 100%;
-    }
+    /*body {
+        height: 100%; }*/
     iframe {
         height: 100%;
-        width: 100%;
+        width: $content-width;
+        display: block;
         position: absolute; 
         margin: 0;
         padding: 0; 
         border: none;
+        overflow: hidden;
     }
 }
 
@@ -113,7 +114,7 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 

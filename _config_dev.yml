@@ -17,3 +17,4 @@ github_username: colin.clement
 
 # Build settings
 markdown: kramdown
+lsi: true
